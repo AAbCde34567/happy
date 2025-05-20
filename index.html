@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>甜點大對決！</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>甜點大對決！</h1>
+
+    <div id="startScreen">
+      <p>準備好挑戰你的台灣甜點知識了嗎？</p>
+      <button id="startBtn">開始遊戲</button>
+      <h2>排行榜</h2>
+      <ul id="leaderboard"></ul>
+    </div>
+
+    <div id="quiz" style="display:none">
+      <div id="question" class="question"></div>
+      <div id="options"></div>
+      <div class="result" id="result"></div>
+      <button id="nextBtn" style="display:none">下一題</button>
+    </div>
+
+    <div id="endScreen" style="display:none">
+      <div id="scoreDisplay"></div>
+      <input type="text" id="playerName" placeholder="請輸入你的名字" />
+      <button onclick="submitScore()">提交分數</button>
+      <button id="playAgainBtn">再玩一次</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
