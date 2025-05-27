@@ -1,24 +1,24 @@
 body {
   font-family: 'Arial', sans-serif;
   text-align: center;
-  background: #fff8f0;
+  background: #2F4F4F;
 }
 
 .container {
   margin: 50px auto;
   width: 90%;
   max-width: 600px;
-  background: #fff;
+  background: #DAA520;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 7px #DAA520;
 }
 
 button {
   padding: 10px 20px;
   margin: 10px;
   border: none;
-  background: #f7b500;
+  background: #FAEBD7;
   border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
@@ -32,7 +32,7 @@ button {
 .option {
   display: block;
   margin: 10px auto;
-  background: #ffe6a7;
+  background: #FAEBD7;
 }
 
 .result {
@@ -42,6 +42,26 @@ button {
 
 #scoreDisplay {
   font-size: 22px;
-  color: #008000;
+  color: #FAEBD7;
   margin-top: 20px;
+}
+
+/* ✅ 新增：蛋糕圖示與標題排版樣式 */
+.title-with-cake {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.title-with-cake h1 {
+  color: #FAEBD7;
+  font-size: 28px;
+  margin: 0;
+}
+
+.cake-icon {
+  width: 40px;
+  height: 40px;
 }

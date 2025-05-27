@@ -3,14 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>甜點大對決！</title>
+  <title>台灣甜點大對決</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      background: #2F4F4F;
+    }
+
+    .container {
+      margin: 50px auto;
+      width: 90%;
+      max-width: 600px;
+      background: #DAA520;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 7px #DAA520;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      background: #FAEBD7;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .question {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .option {
+      display: block;
+      margin: 10px auto;
+      background: #FAEBD7;
+    }
+
+    .result {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    #scoreDisplay {
+      font-size: 22px;
+      color: #FAEBD7;
+      margin-top: 20px;
+    }
+
+    /* 新增的部分：蛋糕圖示與標題排版 */
+    .title-with-cake {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+
+    .title-with-cake h1 {
+      color: #FAEBD7;
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .cake-icon {
+      width: 40px;
+      height: 40px;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>甜點大對決！</h1>
+    <div class="title-with-cake">
+      <img src="https://img.pikbest.com/element_our/20230405/bg/6bc3a7e7d637f.png!sw800" alt="Cake Left" class="cake-icon">
+      <h1>台灣甜點大對決</h1>
+      <img src="https://img.pikbest.com/element_our/20230405/bg/6bc3a7e7d637f.png!sw800" alt="Cake Right" class="cake-icon">
+    </div>
 
     <div id="startScreen">
       <p>準備好挑戰你的台灣甜點知識了嗎？</p>
